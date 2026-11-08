@@ -1,0 +1,11 @@
+/dist/
+/plugin
+/spark-plugin-autoscan-arr
+/deploy/
+/deployments/
+/test-artifacts/
+/node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
