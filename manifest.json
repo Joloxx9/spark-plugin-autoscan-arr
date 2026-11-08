@@ -1,13 +1,14 @@
 {
   "plugin_id": "spark.autoscan.arr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "checksum": "__CHECKSUM__",
   "silo_api_version": "v1",
   "presentation": {
     "display_name": "Sonarr & Radarr Autoscan",
     "summary": "Scans what Sonarr and Radarr import, rename or delete, read from their history.",
     "description_markdown": "Autoscan source for Sonarr and Radarr. On each poll it reads the server's history since the last poll and reports the files that were imported, renamed or deleted, so Silo scans only those folders. It needs no webhook, so it also works when Sonarr or Radarr cannot reach Silo.",
-    "setup_markdown": "Open **Libraries → Autoscan**, enable Autoscan and choose **Add source → Sonarr & Radarr history**. Pick or add a Sonarr or Radarr connection (URL and API key). If Sonarr or Radarr sees your media under different paths than Silo, add a path rewrite on the source. Add one source per Sonarr or Radarr server.",
+    "setup_markdown": "Open **Libraries \u2192 Autoscan**, enable Autoscan and choose **Add source \u2192 Sonarr & Radarr history**. Pick or add a Sonarr or Radarr connection (URL and API key). If Sonarr or Radarr sees your media under different paths than Silo, add a path rewrite on the source. Add one source per Sonarr or Radarr server.",
+    "homepage_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",
     "publisher_name": "Joloxx9",
     "source_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",
     "support_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/issues",
@@ -16,9 +17,18 @@
     "license_spdx": "AGPL-3.0-or-later"
   },
   "supported_platforms": [
-    {"os": "linux", "arch": "amd64"},
-    {"os": "linux", "arch": "arm64"},
-    {"os": "darwin", "arch": "arm64"}
+    {
+      "os": "linux",
+      "arch": "amd64"
+    },
+    {
+      "os": "linux",
+      "arch": "arm64"
+    },
+    {
+      "os": "darwin",
+      "arch": "arm64"
+    }
   ],
   "capabilities": [
     {
@@ -29,9 +39,14 @@
       "metadata": {
         "scan_source": {
           "summary": "Polls a Sonarr or Radarr server's history and scans the files it imported, renamed or deleted.",
-          "delivery_modes": ["poll"],
+          "delivery_modes": [
+            "poll"
+          ],
           "connection": "required",
-          "connection_kinds": ["sonarr", "radarr"]
+          "connection_kinds": [
+            "sonarr",
+            "radarr"
+          ]
         }
       }
     }
