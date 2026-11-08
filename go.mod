@@ -1,6 +1,6 @@
 module github.com/Joloxx9/spark-plugin-autoscan-arr
 
-go 1.26.4
+go 1.26.10
 
 require (
 	github.com/Silo-Server/silo-plugin-sdk v0.32.1
