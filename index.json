@@ -3,13 +3,14 @@
     {
       "manifest": {
         "plugin_id": "spark.autoscan.arr",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "silo_api_version": "v1",
         "presentation": {
           "display_name": "Sonarr & Radarr Autoscan",
           "summary": "Scans what Sonarr and Radarr import, rename or delete, read from their history.",
           "description_markdown": "Autoscan source for Sonarr and Radarr. On each poll it reads the server's history since the last poll and reports the files that were imported, renamed or deleted, so Silo scans only those folders. It needs no webhook, so it also works when Sonarr or Radarr cannot reach Silo.",
           "setup_markdown": "Open **Libraries → Autoscan**, enable Autoscan and choose **Add source → Sonarr & Radarr history**. Pick or add a Sonarr or Radarr connection (URL and API key). If Sonarr or Radarr sees your media under different paths than Silo, add a path rewrite on the source. Add one source per Sonarr or Radarr server.",
+          "homepage_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",
           "publisher_name": "Joloxx9",
           "source_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",
           "support_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/issues",
@@ -54,19 +55,19 @@
         ]
       },
       "repo_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",
-      "checksums_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.0/checksums.txt",
+      "checksums_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.1/checksums.txt",
       "binaries": {
         "linux/amd64": {
-          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.0/plugin-linux-amd64",
-          "checksum": "7c32cf0de1285744f1304d68b16d2c75931d9181aa6bd1656342094d4d723cf7"
+          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.1/plugin-linux-amd64",
+          "checksum": "07c0e8e5db3c07c191841c1288b5f68bc4f3ccf23ab6c64a99b03d9b6575676e"
         },
         "linux/arm64": {
-          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.0/plugin-linux-arm64",
-          "checksum": "7de52f3552a69c81e6d06bf5fec354621c0d4ae889d31a9bd0be1af26e1196ed"
+          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.1/plugin-linux-arm64",
+          "checksum": "dd09f13db44c235a9c324021e567e676e106855457ecda2cecbe55c3ca4d5aa5"
         },
         "darwin/arm64": {
-          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.0/plugin-darwin-arm64",
-          "checksum": "4563fc20b9b94953bba2228420ad408db017118f91fe2dc44b3ff0ec90e67db4"
+          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.1/plugin-darwin-arm64",
+          "checksum": "33f2e2de5b55959b5b378c716425f9778c64fa0230cb8083e45d26d4263be623"
         }
       }
     }
