@@ -1,0 +1,74 @@
+{
+  "plugins": [
+    {
+      "manifest": {
+        "plugin_id": "spark.autoscan.arr",
+        "version": "0.1.0",
+        "silo_api_version": "v1",
+        "presentation": {
+          "display_name": "Sonarr & Radarr Autoscan",
+          "summary": "Scans what Sonarr and Radarr import, rename or delete, read from their history.",
+          "description_markdown": "Autoscan source for Sonarr and Radarr. On each poll it reads the server's history since the last poll and reports the files that were imported, renamed or deleted, so Silo scans only those folders. It needs no webhook, so it also works when Sonarr or Radarr cannot reach Silo.",
+          "setup_markdown": "Open **Libraries → Autoscan**, enable Autoscan and choose **Add source → Sonarr & Radarr history**. Pick or add a Sonarr or Radarr connection (URL and API key). If Sonarr or Radarr sees your media under different paths than Silo, add a path rewrite on the source. Add one source per Sonarr or Radarr server.",
+          "publisher_name": "Joloxx9",
+          "source_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",
+          "support_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/issues",
+          "changelog_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases",
+          "publisher_url": "https://github.com/Joloxx9",
+          "license_spdx": "AGPL-3.0-or-later"
+        },
+        "supported_platforms": [
+          {
+            "os": "linux",
+            "arch": "amd64"
+          },
+          {
+            "os": "linux",
+            "arch": "arm64"
+          },
+          {
+            "os": "darwin",
+            "arch": "arm64"
+          }
+        ],
+        "capabilities": [
+          {
+            "type": "scan_source.v1",
+            "id": "arr-history",
+            "display_name": "Sonarr & Radarr history",
+            "description": "Reads imports, renames and deletions from a Sonarr or Radarr server's history.",
+            "metadata": {
+              "scan_source": {
+                "summary": "Polls a Sonarr or Radarr server's history and scans the files it imported, renamed or deleted.",
+                "delivery_modes": [
+                  "poll"
+                ],
+                "connection": "required",
+                "connection_kinds": [
+                  "sonarr",
+                  "radarr"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "repo_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",
+      "checksums_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.0/checksums.txt",
+      "binaries": {
+        "linux/amd64": {
+          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.0/plugin-linux-amd64",
+          "checksum": "7c32cf0de1285744f1304d68b16d2c75931d9181aa6bd1656342094d4d723cf7"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.0/plugin-linux-arm64",
+          "checksum": "7de52f3552a69c81e6d06bf5fec354621c0d4ae889d31a9bd0be1af26e1196ed"
+        },
+        "darwin/arm64": {
+          "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.0/plugin-darwin-arm64",
+          "checksum": "4563fc20b9b94953bba2228420ad408db017118f91fe2dc44b3ff0ec90e67db4"
+        }
+      }
+    }
+  ]
+}
