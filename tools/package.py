@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Silo install archives and checksum-bearing release assets."""
+"""Build Spark/Silo install archives and checksum-bearing release assets."""
 import argparse
 import hashlib
 import json

@@ -210,7 +210,7 @@ func recordsSince(ctx context.Context, api arrAPI, kind app, from position) ([]h
 	return out, nil
 }
 
-// changesFor turns one history record into the paths Silo should scan.
+// changesFor turns one history record into the paths the server should scan.
 func changesFor(r historyRecord) []*pluginv1.ScanSourceChange {
 	var out []*pluginv1.ScanSourceChange
 	file := func(p string) {
@@ -263,7 +263,7 @@ func (r historyRecord) folder() string {
 var windowsPath = regexp.MustCompile(`^[A-Za-z]:[\\/]`)
 
 // isAbsolute accepts the absolute paths an *arr server may report: Unix,
-// Windows drive and UNC. Silo's path rewrites convert the separators.
+// Windows drive and UNC. The server's path rewrites convert the separators.
 func isAbsolute(p string) bool {
 	return path.IsAbs(p) || windowsPath.MatchString(p) || strings.HasPrefix(p, `\\`)
 }

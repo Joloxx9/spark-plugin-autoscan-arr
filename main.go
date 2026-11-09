@@ -1,7 +1,7 @@
-// Command spark-plugin-autoscan-arr is a Silo Autoscan source for Sonarr and
+// Command spark-plugin-autoscan-arr is a Spark and Silo Autoscan source for Sonarr and
 // Radarr. Each poll reads the server's history since the previous poll and
 // reports the files imported, renamed or deleted in between. The marker is the
-// last history record handled; Silo stores it and sends it back, so the plugin
+// last history record handled; the server stores it and sends it back, so the plugin
 // keeps no state of its own.
 package main
 
@@ -31,7 +31,7 @@ var version string
 var manifestJSON []byte
 
 // requestTimeout bounds each call to Sonarr or Radarr; pollTimeout bounds the
-// whole poll, well inside the five minutes Silo allows.
+// whole poll, well inside the five minutes allowed by either server.
 const (
 	requestTimeout = time.Minute
 	pollTimeout    = 3 * time.Minute

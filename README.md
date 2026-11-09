@@ -1,12 +1,12 @@
-# Sonarr & Radarr Autoscan for Silo
+# Sonarr & Radarr Autoscan for Spark
 
-An Autoscan source for [Silo](https://github.com/Silo-Server/silo-server) and
-Spark. On each poll it reads a Sonarr or Radarr server's history since the
-previous poll and reports the files imported, renamed or deleted in between,
-so Silo scans only those folders.
+An Autoscan source for Spark Server and upstream
+[Silo](https://github.com/Silo-Server/silo-server). On each poll, it reads a
+Sonarr or Radarr server's history since the previous poll and reports files
+imported, renamed or deleted in between, so the server scans only those folders.
 
-It needs no webhook, so it also works when Sonarr or Radarr cannot reach
-Silo. Part of the Spark community plugins.
+It needs no webhook, so it also works when Sonarr or Radarr cannot reach the
+server. Part of the Spark community plugins.
 
 ## Install
 
@@ -20,7 +20,7 @@ under **Admin → Plugins → Repositories**:
 1. Open **Admin → Libraries → Autoscan** and enable Autoscan.
 2. Choose **Add source → Sonarr & Radarr history**.
 3. Pick or add a Sonarr or Radarr connection (URL and API key).
-4. If Sonarr or Radarr sees your media under different paths than Silo, add a
+4. If Sonarr or Radarr sees your media under different paths than the server, add a
    path rewrite on the source.
 
 Add one source per Sonarr or Radarr server.

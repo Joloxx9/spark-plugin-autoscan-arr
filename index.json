@@ -8,8 +8,8 @@
         "presentation": {
           "display_name": "Sonarr & Radarr Autoscan",
           "summary": "Scans what Sonarr and Radarr import, rename or delete, read from their history.",
-          "description_markdown": "Autoscan source for Sonarr and Radarr. On each poll it reads the server's history since the last poll and reports the files that were imported, renamed or deleted, so Silo scans only those folders. It needs no webhook, so it also works when Sonarr or Radarr cannot reach Silo.",
-          "setup_markdown": "Open **Libraries → Autoscan**, enable Autoscan and choose **Add source → Sonarr & Radarr history**. Pick or add a Sonarr or Radarr connection (URL and API key). If Sonarr or Radarr sees your media under different paths than Silo, add a path rewrite on the source. Add one source per Sonarr or Radarr server.",
+          "description_markdown": "Autoscan source for Spark and Silo. It reads Sonarr and Radarr history and reports imported, renamed or deleted files for targeted scans. It needs no webhook, so it works even when the automation server cannot reach the media server.",
+          "setup_markdown": "Open **Libraries → Autoscan**, enable Autoscan and choose **Add source → Sonarr & Radarr history**. Pick or add a Sonarr or Radarr connection (URL and API key). If Sonarr or Radarr sees your media under different paths than Spark or Silo, add a path rewrite on the source. Add one source per Sonarr or Radarr server.",
           "homepage_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",
           "publisher_name": "Joloxx9",
           "source_url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr",

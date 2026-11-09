@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate a Silo plugin repository index for one released Sonarr & Radarr Autoscan plugin version.
+"""Generate a Spark/Silo plugin repository index for one released Sonarr & Radarr Autoscan version.
 
 The index lists platform-specific release binaries and their SHA-256 digests.
-Silo downloads the matching binary itself; users only add the index URL.
+The server downloads the matching binary itself; users only add the index URL.
 """
 
 import argparse
