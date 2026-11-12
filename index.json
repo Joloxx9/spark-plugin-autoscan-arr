@@ -59,15 +59,15 @@
       "binaries": {
         "linux/amd64": {
           "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.1/plugin-linux-amd64",
-          "checksum": "07c0e8e5db3c07c191841c1288b5f68bc4f3ccf23ab6c64a99b03d9b6575676e"
+          "checksum": "1b2088736195424b8fd81b0f4a83601c00c5fcbc86e284d3e740291c475f0d6f"
         },
         "linux/arm64": {
           "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.1/plugin-linux-arm64",
-          "checksum": "dd09f13db44c235a9c324021e567e676e106855457ecda2cecbe55c3ca4d5aa5"
+          "checksum": "1c08cb3aa47a82539be8d23da10b56169034f64832749bbc78c0a5b7b5b7e0e6"
         },
         "darwin/arm64": {
           "url": "https://github.com/Joloxx9/spark-plugin-autoscan-arr/releases/download/v0.1.1/plugin-darwin-arm64",
-          "checksum": "33f2e2de5b55959b5b378c716425f9778c64fa0230cb8083e45d26d4263be623"
+          "checksum": "a21e8cc182a001901d09c0691d145c6210d2e89dbd44f56f44cfd76ac7e3c806"
         }
       }
     }
